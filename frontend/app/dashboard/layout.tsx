@@ -6,10 +6,19 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const { token } = useAuth();
+  const { token, login } = useAuth();
   const router = useRouter();
   const pathname = usePathname();
-  useEffect(() => { if (!token) router.replace('/login'); }, [token, router]);
+  const isMock = process.env.NEXT_PUBLIC_MOCK_AUTH !== '0';
+  useEffect(() => {
+    if (!token) {
+      if (isMock) {
+        void login();
+      } else {
+        router.replace('/login');
+      }
+    }
+  }, [token, router, isMock, login]);
   if (!token) return null;
   return (
     <div className="max-w-7xl mx-auto px-6 py-6 grid md:grid-cols-4 gap-6">

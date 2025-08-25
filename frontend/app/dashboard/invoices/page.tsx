@@ -1,3 +1,4 @@
+"use client";
 import useSWR from 'swr';
 import Link from 'next/link';
 import { api } from '../../../lib/fetcher';

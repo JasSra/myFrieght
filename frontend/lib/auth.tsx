@@ -3,7 +3,8 @@ import { PublicClientApplication, AccountInfo } from '@azure/msal-browser';
 import { MsalProvider } from '@azure/msal-react';
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 
-const mock = typeof window !== 'undefined' && process.env.NEXT_PUBLIC_MOCK_AUTH === '1';
+// Default to mock auth in design/dev unless explicitly disabled with NEXT_PUBLIC_MOCK_AUTH=0
+const mock = typeof window !== 'undefined' && process.env.NEXT_PUBLIC_MOCK_AUTH !== '0';
 
 const msalInstance = new PublicClientApplication({
   auth: {

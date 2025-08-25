@@ -1,8 +1,9 @@
+"use client";
 import useSWR from 'swr';
 import { api } from '../../../lib/fetcher';
 
 export default function AccountPage() {
-  const { data } = useSWR('/api/accounts/me', api);
+  const { data } = useSWR<Record<string, unknown>>('/api/accounts/me', api);
   return (
     <div>
       <h1 className="text-2xl font-semibold">Profile</h1>

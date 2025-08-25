@@ -38,8 +38,8 @@ export default function Header() {
           <Link href="/contact" className="hidden sm:inline-flex items-center rounded-md bg-brand text-white px-3 py-1.5 text-sm font-medium shadow hover:bg-brand-dark">
             Get a quote
           </Link>
-          <Link href="/login" className="inline-flex md:hidden rounded-md bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-3 py-1.5 text-sm font-medium">
-            Sign in
+          <Link href="/dashboard" className="inline-flex md:hidden rounded-md bg-gray-900 text-white dark:bg-white dark:text-gray-900 px-3 py-1.5 text-sm font-medium">
+            Back office
           </Link>
           <button className="md:hidden p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800" aria-label="Toggle navigation" onClick={() => setOpen(!open)}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="text-current"><path stroke="currentColor" strokeWidth="2" strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -54,7 +54,7 @@ export default function Header() {
           <Link href="/blog" onClick={() => setOpen(false)} className="block">Blog</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="block">Contact</Link>
           <Link href="/dashboard" onClick={() => setOpen(false)} className="block">Back office</Link>
-          <Link href="/login" onClick={() => setOpen(false)} className="block">Sign in</Link>
+          <Link href="/dashboard" onClick={() => setOpen(false)} className="block">Back office</Link>
         </div>
       )}
     </header>

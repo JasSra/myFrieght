@@ -17,7 +17,7 @@ export default function HomePage() {
       <section className="relative isolate overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1600&auto=format&fit=crop" 
-          alt="Australian prime mover trucks driving in Brisbane"
+          alt="Freight trucks on the road in South East Queensland"
           width={1600}
           height={900}
           className="w-full h-[56vh] md:h-[64vh] object-cover"
@@ -27,8 +27,8 @@ export default function HomePage() {
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-6">
             <Badge>Brisbane • QLD • Australia</Badge>
-            <h1 className="mt-3 text-4xl md:text-6xl font-extrabold tracking-tight text-white">B2B Prime Mover Capacity</h1>
-            <p className="mt-3 text-base md:text-lg text-gray-200 max-w-2xl">On‑time, compliant prime mover capacity for enterprise freight teams in South East Queensland — with daily lanes to NSW and VIC.</p>
+            <h1 className="mt-3 text-4xl md:text-6xl font-extrabold tracking-tight text-white">SE QLD Freight Logistics</h1>
+            <p className="mt-3 text-base md:text-lg text-gray-200 max-w-2xl">We move freight across South East Queensland with daily routes to NSW and VIC. On‑time, compliant and easy to work with.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/contact" variant="primary" size="lg">Talk to sales</Button>
               <Button href="/pricing" variant="secondary" size="lg">See pricing</Button>
@@ -48,7 +48,7 @@ export default function HomePage() {
       {/* Value props */}
       <section className="max-w-7xl mx-auto px-6 pb-4 grid md:grid-cols-3 gap-6">
         <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-900/60 backdrop-blur">
-          <h3 className="text-lg font-semibold">Enterprise‑ready</h3>
+          <h3 className="text-lg font-semibold">Logistics you can trust</h3>
           <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">NHVR compliant, insured, GPS‑tracked. PO or card billing.</p>
         </div>
         <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/60 dark:bg-gray-900/60 backdrop-blur">
@@ -85,7 +85,7 @@ export default function HomePage() {
         <Card>
           <h3 className="text-lg font-semibold">What you get</h3>
           <ul className="mt-3 text-sm list-disc pl-5 text-gray-600 dark:text-gray-300">
-            <li>Compliant driver + prime mover</li>
+            <li>Compliant driver + vehicle</li>
             <li>Live ETAs and POD</li>
             <li>Clear comms and no surprises</li>
           </ul>
@@ -102,7 +102,7 @@ export default function HomePage() {
           </div>
           <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800">
             <h3 className="font-semibold">2. Dispatch</h3>
-            <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">We assign a compliant driver and prime mover. Live ETAs and status updates.</p>
+            <p className="text-sm mt-2 text-gray-600 dark:text-gray-300">We assign a compliant driver and vehicle. Live ETAs and status updates.</p>
           </div>
           <div className="p-6 rounded-xl border border-gray-200 dark:border-gray-800">
             <h3 className="font-semibold">3. Complete</h3>
@@ -126,7 +126,7 @@ export default function HomePage() {
         <div className="rounded-2xl border border-gray-200 dark:border-gray-800 p-8 md:p-10 bg-gradient-to-br from-brand/10 to-transparent">
           <div className="md:flex items-center justify-between gap-8">
             <div>
-              <h3 className="text-xl md:text-2xl font-bold">Need capacity in Brisbane this week?</h3>
+              <h3 className="text-xl md:text-2xl font-bold">Need freight moved in SE QLD this week?</h3>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">We respond in minutes during business hours. Same‑day dispatch available.</p>
             </div>
             <div className="mt-4 md:mt-0 flex gap-3">

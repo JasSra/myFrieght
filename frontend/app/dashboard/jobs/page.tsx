@@ -10,13 +10,13 @@ const JobSchema = z.object({ reference: z.string().min(2), pickup: z.string().mi
 type JobForm = z.infer<typeof JobSchema>;
 
 export default function JobsPage() {
-  const { data } = useSWR('/api/jobs', api);
+  const { data, mutate } = useSWR('/api/jobs', api);
   const { register, handleSubmit, formState: { errors }, reset } = useForm<JobForm>({ resolver: zodResolver(JobSchema) });
 
   async function onSubmit(values: JobForm) {
-    await api('/api/jobs', { method: 'POST', body: JSON.stringify(values) });
+  await api('/api/jobs', { method: 'POST', body: JSON.stringify(values) });
     reset();
-    // Note: In a real app, revalidate the SWR cache
+  mutate();
   }
   return (
     <div>
