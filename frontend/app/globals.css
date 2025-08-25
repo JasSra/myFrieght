@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sl-color-primary-600: #0ea5e9;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+}
+
+a {
+  text-underline-offset: 4px;
+}
